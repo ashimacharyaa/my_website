@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ======= REPLACE: Page title & meta description ======= -->
+  <title>Ashim Acharya | Data Scientist | AI Researcher</title>
+  <meta name="description" content="Portfolio of Ashim Acharya – Data Scientist - AI Researcher" />
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       LOADING SCREEN
+  ============================================================ -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <!-- REPLACE: your initials -->
+        <span class="loader-initials">AA8</span>
+        <div class="loader-ring"></div>
+      </div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+      <p class="loader-text">Initializing<span class="dots">...</span></p>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       CUSTOM CURSOR
+  ============================================================ -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ============================================================
+       PARTICLES BACKGROUND
+  ============================================================ -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Ashim<span class="logo-accent">Acharya</span><span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Dark/Light Mode Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fas fa-sun" id="themeIcon"></i>
+        </button>
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section id="home" class="hero">
+    <!-- REPLACE: swap background-image in CSS (.hero) with your actual photo URL -->
+    <div class="hero-overlay"></div>
+    <div class="hero-grid-lines"></div>
+
+    <div class="hero-content" data-reveal>
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for work
+      </div>
+
+      <p class="hero-greeting">Namaste! I'm</p>
+      <h1 class="hero-name">Ashim <span class="name-accent">Acharya</span></h1>
+
+      <div class="hero-role">
+        <span class="role-prefix">I'm a&nbsp;</span>
+        <span class="typing-text" 
+        data-words='["Machine Learning","AI Researcher"]'></span>
+        <span class="typing-cursor">|</span>
+      </div>
+
+      <p class="hero-bio">
+        Transforming raw data into meaningful insights and intelligent solutions.<br />
+        Passionate about Data Analytics, Artificial Intelligence, and building impactful digital experiences.
+      </p>
+
+      <div class="hero-cta">
+        <!-- REPLACE: your actual email for hire button -->
+       <a href="mailto:ashimacharyaa08@gmail.com" class="btn btn-primary">
+       <i class="fas fa-paper-plane"></i> Hire Me
+       </a>
+        <!-- REPLACE: actual CV file link -->
+        <a href="my_resumee.pdf" download class="btn btn-outline">
+          <i class="fas fa-download"></i> Download CV
+        </a>
+      </div>
+
+      <div class="hero-social">
+        <!-- REPLACE: your social links -->
+        <a href="https://github.com/ashimacharyaa" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ashimacharya/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://x.com/ashimacharya_" target="_blank" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+     ABOUT SECTION
+============================================================ -->
+<section id="about" class="section about">
+  <div class="container">
+
+    <div class="section-header" data-reveal>
+      <span class="section-tag">// 01. about_me</span>
+
+      <h2 class="section-title">
+        Who I <span class="accent">Am</span>
+      </h2>
+
+      <p class="section-sub">
+      </p>
+    </div>
+
+    <div class="about-grid">
+
+      <!-- Photo + stats -->
+      <div class="about-photo-col" data-reveal>
+
+        <div class="about-photo-wrap">
+
+          <!-- Replace with your own image -->
+          <div class="about-photo"
+            style="background-image:url('personal_web.jpg')">
+          </div>
+
+          <div class="photo-badge">
+            <i class="fas fa-brain"></i> 2+ Year Learning AI
+          </div>
+        </div>
+
+        <div class="stats-grid">
+
+          <div class="stat-card" data-reveal>
+            <span class="stat-num" data-count="15">0</span>
+            <span class="stat-suffix">+</span>
+            <p>Projects Built</p>
+          </div>
+
+          <div class="stat-card" data-reveal>
+            <span class="stat-num" data-count="10">0</span>
+            <span class="stat-suffix">+</span>
+            <p>AI Experiments</p>
+          </div>
+
+          <div class="stat-card" data-reveal>
+            <span class="stat-num" data-count="2">0</span>
+            <span class="stat-suffix">+</span>
+            <p>Years Learning</p>
+          </div>
+
+          <div class="stat-card" data-reveal>
+            <span class="stat-num" data-count="5">0</span>
+            <span class="stat-suffix">+</span>
+            <p>Technologies Learned</p>
+          </div>
+
+        </div>
+      </div>
+
+        <!-- Info col -->
+        <div class="about-info-col">
+          <p class="about-intro" data-reveal>
+        A passionate AI and Machine Learning enthusiast exploring the world of intelligent systems and data-driven solutions.
+          </p>
+
+        <h3 class="sub-heading" data-reveal>Technical Skills</h3>
+
+  <div class="skills-list" data-reveal>
+
+    <div class="skill-item">
+      <div class="skill-info">
+        <span>Python</span>
+        <span>85%</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-fill" data-width="85"></div>
+      </div>
+    </div>
+
+    <div class="skill-item">
+      <div class="skill-info">
+        <span>Machine Learning</span>
+        <span>78%</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-fill" data-width="78"></div>
+      </div>
+    </div>
+
+    <div class="skill-item">
+      <div class="skill-info">
+        <span>Data Analysis</span>
+        <span>80%</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-fill" data-width="80"></div>
+      </div>
+    </div>
+
+    <div class="skill-item">
+      <div class="skill-info">
+        <span>HTML / CSS</span>
+        <span>75%</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-fill" data-width="75"></div>
+      </div>
+    </div>
+
+    <div class="skill-item">
+      <div class="skill-info">
+        <span>JavaScript</span>
+        <span>70%</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-fill" data-width="70"></div>
+      </div>
+    </div>
+
+    <div class="skill-item">
+      <div class="skill-info">
+        <span>SQL / Data Visualization</span>
+        <span>72%</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-fill" data-width="72"></div>
+      </div>
+    </div>
+
+  </div>
+
+
+          <!-- Education Timeline -->
+          <h3 class="sub-heading" data-reveal>Education</h3>
+          <div class="timeline" data-reveal>
+            <div class="timeline-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+        <span class="tl-date">High School</span>
+        <h4>Kathmandu BernHardt College</h4>
+        <p>GPA: 3.78</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="tl-dot"></div>
+
+      <div class="tl-content">
+        <span class="tl-date">Bachelor's Degree</span>
+        <h4>Bachelor in Computer Science</h4>
+        <p>Major in Data Science</p>
+      </div>
+    </div>
+          </div>
+
+          <!-- Experience -->
+          <h3 class="sub-heading" data-reveal>Experience</h3>
+          <div class="experience-cards" data-reveal>
+            <!-- REPLACE: your experience entries -->
+            <div class="exp-card">
+              <div class="exp-logo"><i class="fas fa-building"></i></div>
+              <div class="exp-info">
+                 <h4>Machine Learning </h4>
+                 <span>Predictive Analysis · 2024 – Present</span>
+                     <p>
+                    Exploring Machine Learning concepts, building beginner AI projects,
+                    and learning data-driven problem solving using Python.</p>
+              </div>
+            </div>
+            <div class="exp-card">
+              <div class="exp-logo"><i class="fas fa-rocket"></i></div>
+              <div class="exp-info">
+                <h4>AI Research </h4>
+                <span>Independent Research · 2024 – Present</span>
+                <p>
+                    Studying Artificial Intelligence, neural networks, and modern AI tools
+                     while experimenting with real-world datasets and models.
+              </div>
+            </div>
+            <div class="exp-card">
+              <div class="exp-logo"><i class="fas fa-laptop-code"></i></div>
+              <div class="exp-info">
+                <h4>Data Analytics Projects</h4>
+                <span>Academic & Personal Projects</span>
+                <p>Worked on beginner data analysis and visualization projects using
+                Python, SQL, and data science techniques.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICES SECTION
+  ============================================================ -->
+  <section id="services" class="section services">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-tag">// 02. what_i_do</span>
+        <h2 class="section-title">My <span class="accent">Services</span></h2>
+        <p class="section-sub">Tailored solutions for your digital ambitions.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- REPLACE: service cards as needed -->
+       <div class="service-card" data-reveal>
+        <div class="service-icon"><i class="fas fa-brain"></i></div>
+        <h3>AI Research</h3>
+        <p>Advanced machine learning models, neural network architectures, and deep learning solutions. From exploratory data analysis to production-ready AI pipelines.</p>
+        <ul class="service-list">
+            <li>PyTorch / TensorFlow / JAX</li>
+            <li>LLMs / NLP / Computer Vision</li>
+            <li>Scikit-Learn / Pandas / NumPy</li>
+        </ul>
+        <div class="service-num">01</div>
+        </div>
+
+            <div class="service-card" data-reveal>
+        <div class="service-icon"><i class="fas fa-chart-pie"></i></div>
+        <h3>Data Science & Analytics</h3>
+        <p>Transforming raw data into actionable business intelligence. Predictive modeling, statistical analysis, and interactive dashboards to drive data-backed decisions.</p>
+        <ul class="service-list">
+            <li>PowerBI / Tableau / Looker</li>
+            <li>Statistical Modeling & A/B Testing</li>
+            <li>SQL / Spark / Databricks</li>
+        </ul>
+        <div class="service-num">02</div>
+        </div>
+
+        <div class="service-card" data-reveal>
+        <div class="service-icon"><i class="fas fa-network-wired"></i></div>
+        <h3>Deep Learning Solutions</h3>
+        <p>Designing custom neural network architectures for complex pattern recognition. Expertise in generative AI, reinforcement learning, and sequence-to-sequence modeling.</p>
+        <ul class="service-list">
+            <li>Transformers / CNNs / RNNs</li>
+            <li>Custom Loss Functions & Optimization</li>
+            <li>Transfer Learning & Fine-tuning</li>
+        </ul>
+        <div class="service-num">03</div>
+        </div>
+
+            <div class="service-card" data-reveal>
+        <div class="service-icon"><i class="fas fa-cogs"></i></div>
+        <h3>MLOps & Infrastructure</h3>
+        <p>Bridging the gap between ML models and production. Automating the training, deployment, monitoring, and scaling of enterprise-grade AI systems.</p>
+        <ul class="service-list">
+            <li>MLflow / Kubeflow / Weights & Biases</li>
+            <li>Triton Inference Server / ONNX</li>
+            <li>Model Monitoring & Drift Detection</li>
+        </ul>
+        <div class="service-num">04</div>
+        </div>
+        </section>
+
+  <section id="portfolio" class="section portfolio">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-tag">// 03. my_work</span>
+        <h2 class="section-title">Recent <span class="accent">Projects</span></h2>
+        <p class="section-sub">A curated selection of machine learning models and intelligent applications I've built.</p>
+      </div>
+
+      <div class="filter-btns" data-reveal>
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="data-science">Data Science</button>
+        <button class="filter-btn" data-filter="deep-learning">Deep Learning</button>
+        <button class="filter-btn" data-filter="mlops">MLOps</button>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <div class="portfolio-card" data-category="data-science" data-reveal>
+          <div class="port-img" style="background-image:url('https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=600&q=80')">
+            <div class="port-overlay">
+              <a href="https://github.com/" target="_blank" class="port-btn"><i class="fab fa-github"></i> Code</a>
+              <a href="#" target="_blank" class="port-btn port-btn-live"><i class="fas fa-arrow-up-right-from-square"></i> Demo</a>
+            </div>
+          </div>
+          <div class="port-info">
+            <span class="port-tag">Data Science</span>
+            <h3>Predictive Valuation Engine</h3>
+            <p>Automated fundamental analysis pipeline calculating intrinsic value via automated Discounted Cash Flow (DCF) modeling.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="deep-learning" data-reveal>
+          <div class="port-img" style="background-image:url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80')">
+            <div class="port-overlay">
+              <a href="https://github.com/" target="_blank" class="port-btn"><i class="fab fa-github"></i> Code</a>
+              <a href="#" target="_blank" class="port-btn port-btn-live"><i class="fas fa-arrow-up-right-from-square"></i> Demo</a>
+            </div>
+          </div>
+          <div class="port-info">
+            <span class="port-tag">Deep Learning</span>
+            <h3>MedSecure NLP Platform</h3>
+            <p>Fine-tuned transformer model for anonymizing sensitive medical records while extracting named clinical entities.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="mlops" data-reveal>
+          <div class="port-img" style="background-image:url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&q=80')">
+            <div class="port-overlay">
+              <a href="https://github.com/" target="_blank" class="port-btn"><i class="fab fa-github"></i> Code</a>
+              <a href="#" target="_blank" class="port-btn port-btn-live"><i class="fas fa-arrow-up-right-from-square"></i> Live</a>
+            </div>
+          </div>
+          <div class="port-info">
+            <span class="port-tag">MLOps</span>
+            <h3>Automated CI/CD Deployment</h3>
+            <p>End-to-end GitOps pipeline using Docker and GitHub Actions for continuous testing and deployment of LLM weights.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="data-science" data-reveal>
+          <div class="port-img" style="background-image:url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80')">
+            <div class="port-overlay">
+              <a href="https://github.com/" target="_blank" class="port-btn"><i class="fab fa-github"></i> Code</a>
+              <a href="#" target="_blank" class="port-btn port-btn-live"><i class="fas fa-arrow-up-right-from-square"></i> Live</a>
+            </div>
+          </div>
+          <div class="port-info">
+            <span class="port-tag">Analytics</span>
+            <h3>Global Audience Revenue Insights</h3>
+            <p>Statistical distribution analysis modeling ad impressions and RPM yields across multi-regional creator demographics.</p>
+          </div>
+        </div>
+
+                <div class="portfolio-card" data-category="deep-learning" data-reveal>
+            <div class="port-img" style="background-image:url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&q=80')">
+                <div class="port-overlay">
+                <a href="https://github.com/" target="_blank" class="port-btn"><i class="fab fa-github"></i> Code</a>
+                <a href="#" target="_blank" class="port-btn port-btn-live"><i class="fas fa-arrow-up-right-from-square"></i> Demo</a>
+                </div>
+            </div>
+            <div class="port-info">
+                <span class="port-tag">Computer Vision</span>
+                <h3>Real-time Tactical Tracker</h3>
+                <p>Custom-trained YOLO convolutional network for tracking player positions, ball trajectory, and spatial occupation on sports feeds.</p>
+            </div>
+            </div>
+
+        <div class="portfolio-card" data-category="mlops" data-reveal>
+          <div class="port-img" style="background-image:url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&q=80')">
+            <div class="port-overlay">
+              <a href="https://github.com/" target="_blank" class="port-btn"><i class="fab fa-github"></i> Code</a>
+              <a href="#" target="_blank" class="port-btn port-btn-live"><i class="fas fa-arrow-up-right-from-square"></i> Live</a>
+            </div>
+          </div>
+          <div class="port-info">
+            <span class="port-tag">Cybersecurity / ML</span>
+            <h3>Network Threat Inspector</h3>
+            <p>Unsupervised isolation forest models flagging network traffic anomalies and automated payload profiling from packet captures.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-tag">// 04. get_in_touch</span>
+        <h2 class="section-title">Contact <span class="accent">Me</span></h2>
+        <p class="section-sub">Have a project in mind? Let's build something great.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info" data-reveal>
+          <h3>Let's Talk</h3>
+          <p>I'm open to freelance projects, full-time roles, and interesting collaborations. Drop me a line!</p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span>Email</span>
+                <a href="mailto:alex@example.com">ashimacharyaa08@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <span>Phone</span>
+                <a href="tel:+11234567890">+977 9840254735</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon"><i class="fas fa-location-dot"></i></div>
+              <div>
+                <span>Address</span>
+                <p>Kirtipur, Kathmandu, Nepal</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-social">
+            <!-- REPLACE: your social links -->
+            <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://codepen.io/" target="_blank" aria-label="CodePen"><i class="fab fa-codepen"></i></a>
+          </div>
+
+          <!-- Map Placeholder — REPLACE iframe src with actual Google Maps embed URL -->
+          <div class="map-placeholder">
+            <iframe
+              src="https://maps.google.com/maps?q=Kathmandu,%20Nepal&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="Location Map">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Right: form -->
+                <div class="contact-form-wrap" data-reveal>
+            <form class="contact-form" id="contactForm" action="https://formspree.io/f/xkoyeerd" method="POST" novalidate>
+                <div class="form-group">
+                <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Ram Subedi" required />
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="address">Address / Location</label>
+              <input type="text" id="address" name="address" placeholder="Chitwan, Nepal" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="aashika@gmail.com" required />
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project Inquiry" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i>
+              <span>Send Message</span>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-circle-check"></i> Message sent successfully!
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="footer-logo">
+        <span class="logo-bracket">&lt;</span>Ashim<span class="logo-accent">Acharya</span><span class="logo-bracket">/&gt;</span>
+      </a>
+      <p class="footer-copy">
+        <!-- REPLACE: your name -->
+        &copy; <span id="footerYear"></span> Ashim Acharya. Crafted with <span class="heart">♥</span> and love from Nepal.
+      </p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
